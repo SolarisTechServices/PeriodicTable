@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CompListFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="30sp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15sp">
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Halides"
+                android:layout_gravity="center"
+                android:layout_marginRight="10sp"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="0px" android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Explore"
+                android:layout_marginRight="10sp"
+                android:id="@+id/comp_list_halides" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15sp">
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Sulphides"
+                android:layout_gravity="center"
+                android:layout_marginRight="10sp"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="0px" android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Explore"
+                android:layout_marginRight="10sp"
+                android:id="@+id/comp_list_sulphides" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15sp">
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Oxides"
+                android:layout_gravity="center"
+                android:layout_marginRight="10sp"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="0px" android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Explore"
+                android:layout_marginRight="10sp"
+                android:id="@+id/comp_list_oxides" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15sp">
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Ferrocynide"
+                android:layout_gravity="center"
+                android:layout_marginRight="10sp"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="0px" android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Explore"
+                android:layout_marginRight="10sp"
+                android:id="@+id/comp_list_ferrocynide" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15sp">
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Chromates"
+                android:layout_gravity="center"
+                android:layout_marginRight="10sp"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="0px" android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Explore"
+                android:layout_marginRight="10sp"
+                android:id="@+id/comp_list_chromates" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15sp">
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Sulphates &amp; sulphites"
+                android:layout_gravity="center"
+                android:layout_marginRight="10sp"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="0px" android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Explore"
+                android:layout_marginRight="10sp"
+                android:id="@+id/comp_list_sulphatesandsulphites" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15sp">
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Hydroxides"
+                android:layout_gravity="center"
+                android:layout_marginRight="10sp"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="0px" android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Explore"
+                android:layout_marginRight="10sp"
+                android:id="@+id/comp_list_hydroxides" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15sp">
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Cynides"
+                android:layout_gravity="center"
+                android:layout_marginRight="10sp"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="0px" android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Explore"
+                android:layout_marginRight="10sp"
+                android:id="@+id/comp_list_cynides" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15sp">
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Chromium"
+                android:layout_gravity="center"
+                android:layout_marginRight="10sp"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="0px" android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Explore"
+                android:layout_marginRight="10sp"
+                android:id="@+id/comp_list_chromium" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15sp">
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Nickel"
+                android:layout_gravity="center"
+                android:layout_marginRight="10sp"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="0px" android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Explore"
+                android:layout_marginRight="10sp"
+                android:id="@+id/comp_list_nickel" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15sp">
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Silver"
+                android:layout_gravity="center"
+                android:layout_marginRight="10sp"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="0px" android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Explore"
+                android:layout_marginRight="10sp"
+                android:id="@+id/comp_list_silver" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="35sp">
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Miscellaneous"
+                android:layout_gravity="center"
+                android:layout_marginRight="10sp"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="0px" android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Explore"
+                android:layout_marginRight="10sp"
+                android:id="@+id/comp_list_miscellaneous" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,1515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TableFragment"
+    android:tag="tablefragment">
+    <ProgressBar
+        android:id="@+id/progress_loader"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="10sp">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/tableLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout android:orientation="vertical">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_1"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/first"
+                                app:name="Hydrogen"
+                                app:no="1"
+                                app:symbol="H" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_3"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/second"
+                                app:name="Lithium"
+                                app:no="3"
+                                app:symbol="Li" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_11"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/second"
+                                app:name="Sodium"
+                                app:no="11"
+                                app:symbol="Na" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_19"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/second"
+                                app:name="Potassium"
+                                app:no="19"
+                                app:symbol="K" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_37"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/second"
+                                app:name="Rubidium"
+                                app:no="37"
+                                app:symbol="Rb" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_55"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/second"
+                                app:name="Cesium"
+                                app:no="55"
+                                app:symbol="Cs" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_87"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/second"
+                                app:name="Francium"
+                                app:no="87"
+                                app:symbol="Fr" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="73sp"
+                            android:orientation="vertical">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_4"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/third"
+                                app:name="Beryllium"
+                                app:no="4"
+                                app:symbol="Be" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_12"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/third"
+                                app:name="Magnesium"
+                                app:no="12"
+                                app:symbol="Mg" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_20"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/third"
+                                app:name="Calcium"
+                                app:no="20"
+                                app:symbol="Ca" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_38"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/third"
+                                app:name="Strontium"
+                                app:no="38"
+                                app:symbol="Sr" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_56"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/third"
+                                app:name="Barium"
+                                app:no="56"
+                                app:symbol="Ba" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_88"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/third"
+                                app:name="Radium"
+                                app:no="88"
+                                app:symbol="Ra" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_21"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Scandium"
+                                app:no="21"
+                                app:symbol="Sc" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_39"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Yttrium"
+                                app:no="39"
+                                app:symbol="Y" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_57"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Lanthanum"
+                                app:no="57"
+                                app:symbol="La" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_89"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Actinium"
+                                app:no="89"
+                                app:symbol="Ac" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_22"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Titanium"
+                                app:no="22"
+                                app:symbol="Ti" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_40"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Zirconium"
+                                app:no="40"
+                                app:symbol="Zr" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_72"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Hafnium"
+                                app:no="72"
+                                app:symbol="Hf" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_104"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Rutherfordium"
+                                app:no="104"
+                                app:symbol="Rf" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_23"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Vanadium"
+                                app:no="23"
+                                app:symbol="V" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_41"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Niobium"
+                                app:no="41"
+                                app:symbol="Nb" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_73"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Tantalum"
+                                app:no="73"
+                                app:symbol="Ta" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_105"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Dubnium"
+                                app:no="105"
+                                app:symbol="Db" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_24"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Chromium"
+                                app:no="24"
+                                app:symbol="Cr" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_42"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Molybdenum"
+                                app:no="42"
+                                app:symbol="Mo" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_74"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Tungsten"
+                                app:no="74"
+                                app:symbol="W" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_106"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Seaborgium"
+                                app:no="106"
+                                app:symbol="Sg" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_25"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Manganese"
+                                app:no="25"
+                                app:symbol="Mn" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_43"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Technetium"
+                                app:no="43"
+                                app:symbol="Tc" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_75"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Rhenium"
+                                app:no="75"
+                                app:symbol="Re" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_107"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Bohrium"
+                                app:no="107"
+                                app:symbol="Bh" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_26"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Iron"
+                                app:no="26"
+                                app:symbol="Fe" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_44"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Ruthenium"
+                                app:no="44"
+                                app:symbol="Ru" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_76"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Osmium"
+                                app:no="76"
+                                app:symbol="Os" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_108"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Hassium"
+                                app:no="108"
+                                app:symbol="Hs" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_27"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Cobalt"
+                                app:no="27"
+                                app:symbol="Co" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_45"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Rhodium"
+                                app:no="45"
+                                app:symbol="Rh" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_77"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Iridium"
+                                app:no="77"
+                                app:symbol="Ir" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_109"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Meitnerium"
+                                app:no="109"
+                                app:symbol="Mt" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_28"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Nickel"
+                                app:no="28"
+                                app:symbol="Ni" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_46"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Palladium"
+                                app:no="46"
+                                app:symbol="Pd" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_78"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Platinum"
+                                app:no="78"
+                                app:symbol="Pt" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_110"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Darmstadtium"
+                                app:no="110"
+                                app:symbol="Ds" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_29"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Copper"
+                                app:no="29"
+                                app:symbol="Cu" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_47"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Silver"
+                                app:no="47"
+                                app:symbol="Ag" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_79"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Gold"
+                                app:no="79"
+                                app:symbol="Au" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_111"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Roentgenium"
+                                app:no="111"
+                                app:symbol="Rg" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="219sp"
+                            android:orientation="vertical">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_30"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Zinc"
+                                app:no="30"
+                                app:symbol="Zn" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_48"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Cadmium"
+                                app:no="48"
+                                app:symbol="Cd" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_80"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Mercury"
+                                app:no="80"
+                                app:symbol="Hg" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_112"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fourth"
+                                app:name="Copernicium"
+                                app:no="112"
+                                app:symbol="Cn" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="73sp"
+                            android:orientation="vertical">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_5"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/sixth"
+                                app:name="Boron"
+                                app:no="5"
+                                app:symbol="B" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_13"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Aluminium"
+                                app:no="13"
+                                app:symbol="Al" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_31"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Gallium"
+                                app:no="31"
+                                app:symbol="Ga" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_49"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Indium"
+                                app:no="49"
+                                app:symbol="In" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_81"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Thallium"
+                                app:no="81"
+                                app:symbol="Tl" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_113"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Nihonium"
+                                app:no="113"
+                                app:symbol="Nh" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="73sp"
+                            android:orientation="vertical">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_6"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/seventh"
+                                app:name="carbon"
+                                app:no="6"
+                                app:symbol="C" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_14"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/sixth"
+                                app:name="Silicon"
+                                app:no="14"
+                                app:symbol="Si" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_32"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/sixth"
+                                app:name="Germanium"
+                                app:no="32"
+                                app:symbol="Ge" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_50"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Tin"
+                                app:no="50"
+                                app:symbol="Sn" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_82"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Lead"
+                                app:no="82"
+                                app:symbol="Pb" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_114"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Flerovium"
+                                app:no="114"
+                                app:symbol="Fl" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="73sp"
+                            android:orientation="vertical">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_7"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/seventh"
+                                app:name="Nitrogen"
+                                app:no="7"
+                                app:symbol="N" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_15"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/seventh"
+                                app:name="Phosphorus"
+                                app:no="15"
+                                app:symbol="P" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_33"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/sixth"
+                                app:name="Arsenic"
+                                app:no="33"
+                                app:symbol="As" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_51"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/sixth"
+                                app:name="Antimony"
+                                app:no="51"
+                                app:symbol="Sb" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_83"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Bismuth"
+                                app:no="83"
+                                app:symbol="Bi" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_115"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Moscovium"
+                                app:no="115"
+                                app:symbol="Mc" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="73sp"
+                            android:orientation="vertical">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_8"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/seventh"
+                                app:name="Oxygen"
+                                app:no="8"
+                                app:symbol="O" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_16"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/seventh"
+                                app:name="Sulfur"
+                                app:no="16"
+                                app:symbol="S" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_34"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/seventh"
+                                app:name="Selenium"
+                                app:no="34"
+                                app:symbol="Se" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_52"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/sixth"
+                                app:name="Tellurium"
+                                app:no="52"
+                                app:symbol="Te" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_84"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/sixth"
+                                app:name="Polonium"
+                                app:no="84"
+                                app:symbol="Po" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_116"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/fifth"
+                                app:name="Livermorium"
+                                app:no="116"
+                                app:symbol="Lv" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="73sp"
+                            android:orientation="vertical">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_9"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eight"
+                                app:name="Fluorine"
+                                app:no="9"
+                                app:symbol="F" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_17"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eight"
+                                app:name="Chlorine"
+                                app:no="17"
+                                app:symbol="Cl" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_35"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eight"
+                                app:name="Bromine"
+                                app:no="35"
+                                app:symbol="Br" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_53"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eight"
+                                app:name="Iodine"
+                                app:no="53"
+                                app:symbol="I" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_85"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eight"
+                                app:name="Astatine"
+                                app:no="85"
+                                app:symbol="At" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_117"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eight"
+                                app:name="Tennessine"
+                                app:no="117"
+                                app:symbol="Ts" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:orientation="vertical">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_2"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/nine"
+                                app:name="Helium"
+                                app:no="2"
+                                app:symbol="He" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_10"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/nine"
+                                app:name="Neon"
+                                app:no="10"
+                                app:symbol="Ne" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_18"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/nine"
+                                app:name="Argon"
+                                app:no="18"
+                                app:symbol="Ar" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_36"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/nine"
+                                app:name="Krypton"
+                                app:no="36"
+                                app:symbol="Kr" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_54"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/nine"
+                                app:name="Xenon"
+                                app:no="54"
+                                app:symbol="Xe" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_86"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/nine"
+                                app:name="Radon"
+                                app:no="86"
+                                app:symbol="Rn" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_118"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/nine"
+                                app:name="Oganesson"
+                                app:no="118"
+                                app:symbol="Og" />
+
+                        </LinearLayout>
+
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/tableLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="210sp"
+                    android:layout_marginTop="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tableLayout1">
+
+                    <TableRow>
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:orientation="horizontal">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_58"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Cerium"
+                                app:no="58"
+                                app:symbol="Ce" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_59"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Praseodymium"
+                                app:no="59"
+                                app:symbol="Pr" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_60"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Neodymium"
+                                app:no="60"
+                                app:symbol="Nd" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_61"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Promethium"
+                                app:no="61"
+                                app:symbol="Pm" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_62"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Samarium"
+                                app:no="62"
+                                app:symbol="Sm" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_63"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Europium"
+                                app:no="63"
+                                app:symbol="Eu" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_64"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Gadolinium"
+                                app:no="64"
+                                app:symbol="Gd" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_65"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Terbium"
+                                app:no="65"
+                                app:symbol="Tb" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_66"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Dysprosium"
+                                app:no="66"
+                                app:symbol="Dy" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_67"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Holmium"
+                                app:no="67"
+                                app:symbol="Ho" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_68"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Erbium"
+                                app:no="68"
+                                app:symbol="Er" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_69"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Thulium"
+                                app:no="69"
+                                app:symbol="Tm" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_70"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Ytterbium"
+                                app:no="70"
+                                app:symbol="Yb" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_71"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/eleven"
+                                app:name="Lutetium"
+                                app:no="71"
+                                app:symbol="Lu" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow>
+                        <LinearLayout
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="10sp"
+                            android:orientation="horizontal">
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_90"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Thorium"
+                                app:no="90"
+                                app:symbol="Th" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_91"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Protactinium"
+                                app:no="91"
+                                app:symbol="Pa" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_92"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Uranium"
+                                app:no="92"
+                                app:symbol="U" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_93"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Neptunium"
+                                app:no="93"
+                                app:symbol="Np" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_94"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Plutonium"
+                                app:no="94"
+                                app:symbol="Pu" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_95"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Americium"
+                                app:no="95"
+                                app:symbol="Am" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_96"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Curium"
+                                app:no="96"
+                                app:symbol="Cm" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_97"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Berkelium"
+                                app:no="97"
+                                app:symbol="Bk" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_98"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Californium"
+                                app:no="98"
+                                app:symbol="Cf" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_99"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Einsteinium"
+                                app:no="99"
+                                app:symbol="Es" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_100"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Fermium"
+                                app:no="100"
+                                app:symbol="Fm" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_101"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Mendelevium"
+                                app:no="101"
+                                app:symbol="Md" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_102"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Nobelium"
+                                app:no="102"
+                                app:symbol="No" />
+
+                            <com.su.periodictable.customtext
+                                android:id="@+id/cut_103"
+                                android:layout_width="68sp"
+                                android:layout_height="68sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginBottom="5sp"
+                                android:background="@color/twelve"
+                                app:name="Lawrencium"
+                                app:no="103"
+                                app:symbol="Lr" />
+                        </LinearLayout>
+                    </TableRow>
+
+                </TableLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.TrendFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="30sp"
+        android:layout_marginLeft="30sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Periodic Trends"
+            android:textSize="24sp"
+            android:textAlignment="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0px" android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Group wise &amp; Period wise"
+                android:layout_marginRight="10sp"
+                android:id="@+id/trend_pt" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Important Compounds"
+            android:textSize="24sp"
+            android:textAlignment="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:text="Formulae &amp; thier colors"
+                android:layout_marginRight="10sp"
+                android:layout_weight="0.5"
+                android:id="@+id/trend_ic"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other Trends"
+            android:textSize="24sp"
+            android:textAlignment="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:text="Explore"
+                android:layout_marginRight="10sp"
+                android:layout_weight="0.5"
+                android:id="@+id/trend_ot"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

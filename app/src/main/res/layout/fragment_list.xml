@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ListFragment"
+    android:tag="listfragment">
+
+    <TableLayout
+        android:id="@+id/table_m"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:text="At. No"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10sp"
+                android:paddingRight="30sp"
+                android:text="Symbol"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="20sp"
+                android:text="Element"
+                android:textSize="22sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table_m"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableLayout
+            android:id="@+id/table_n"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="20sp">
+<!--
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/tvv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="20sp"
+                    android:text="At. No"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/tvv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="40sp"
+                    android:paddingRight="40sp"
+                    android:text="Symbol"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/tvv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="20sp"
+                    android:text="Element"
+                    android:textSize="22sp" />
+
+            </TableRow>-->
+        </TableLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
